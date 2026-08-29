@@ -893,20 +893,16 @@
 
 
 .why-heading h2 {
-
     margin: 0;
+    max-width: 720px;
 
-    max-width: 850px;
+    font-size: clamp(38px, 4.2vw, 62px);
 
-    font-size:
-        clamp(48px, 6vw, 88px);
+    line-height: 0.92;
 
-    line-height: 0.9;
-
-    letter-spacing: -4px;
+    letter-spacing: -2.5px;
 
     font-weight: 700;
-
 }
 
 
@@ -1153,13 +1149,11 @@
     }
 
 
-    .why-heading h2 {
-
-        font-size: 46px;
-
-        letter-spacing: -2.5px;
-
-    }
+   .why-heading h2 {
+    font-size: 36px;
+    line-height: 0.95;
+    letter-spacing: -1.5px;
+}
 
 
     .why-text p {
