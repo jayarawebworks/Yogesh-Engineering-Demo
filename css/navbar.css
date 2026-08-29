@@ -1,1 +1,716 @@
 
+/* =========================================================
+   YOGESH ENGINEERING SERVICES
+   PREMIUM FLOATING NAVBAR
+========================================================= */
+
+
+/* ---------- ROOT ---------- */
+
+:root {
+    --nav-red: #b51f2a;
+    --nav-red-dark: #921822;
+
+    --nav-white: rgba(255, 255, 255, 0.82);
+    --nav-border: rgba(255, 255, 255, 0.65);
+
+    --nav-text: #171719;
+    --nav-muted: #66666b;
+
+    --nav-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.10),
+        0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: fixed;
+    top: 22px;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FLOATING NAVBAR
+========================================================= */
+
+.floating-navbar {
+    width: min(1180px, calc(100% - 50px));
+    height: 76px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10px 0 24px;
+
+    background: var(--nav-white);
+
+    border: 1px solid var(--nav-border);
+
+    border-radius: 24px;
+
+    box-shadow: var(--nav-shadow);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    pointer-events: auto;
+
+    transition:
+        width 0.4s ease,
+        background 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+
+    color: var(--nav-text);
+
+    flex-shrink: 0;
+}
+
+
+/* YES logo mark */
+
+.brand-mark {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1.5px solid var(--nav-red);
+
+    border-radius: 50%;
+
+    color: var(--nav-red);
+
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: -1px;
+}
+
+
+/* Company name */
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.05;
+}
+
+.brand-name strong {
+    font-size: 16px;
+    font-weight: 750;
+
+    letter-spacing: -0.3px;
+}
+
+.brand-name small {
+    margin-top: 4px;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    color: var(--nav-red);
+
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+
+.nav-link {
+    position: relative;
+
+    padding: 10px 14px;
+
+    color: var(--nav-text);
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 550;
+
+    border-radius: 12px;
+
+    transition:
+        color 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 14px;
+    right: 14px;
+    bottom: 5px;
+
+    height: 1.5px;
+
+    background: var(--nav-red);
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
+}
+
+
+.nav-link:hover {
+    color: var(--nav-red);
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+}
+
+
+.nav-link.active {
+    color: var(--nav-red);
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.nav-cta {
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0 18px;
+
+    border-radius: 17px;
+
+    background: var(--nav-red);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 650;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.nav-cta:hover {
+    background: var(--nav-red-dark);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(181, 31, 42, 0.22);
+}
+
+
+.cta-arrow {
+    font-size: 17px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.nav-cta:hover .cta-arrow {
+    transform: translate(2px, -2px);
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.mobile-menu-button {
+    display: none;
+
+    width: 50px;
+    height: 50px;
+
+    margin-left: auto;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+
+.mobile-menu-button span {
+    position: absolute;
+
+    left: 13px;
+
+    width: 24px;
+    height: 1.5px;
+
+    background: var(--nav-red);
+
+    transition:
+        transform 0.4s ease,
+        top 0.4s ease,
+        opacity 0.3s ease;
+}
+
+
+.mobile-menu-button span:nth-child(1) {
+    top: 18px;
+}
+
+.mobile-menu-button span:nth-child(2) {
+    top: 25px;
+}
+
+.mobile-menu-button span:nth-child(3) {
+    top: 32px;
+}
+
+
+/* Menu → X */
+
+.mobile-menu-button.active span:nth-child(1) {
+    top: 25px;
+
+    transform: rotate(45deg);
+}
+
+.mobile-menu-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-button.active span:nth-child(3) {
+    top: 25px;
+
+    transform: rotate(-45deg);
+}
+
+
+/* =========================================================
+   MOBILE FULLSCREEN MENU
+========================================================= */
+
+.mobile-menu {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 900;
+
+    background: rgba(12, 12, 14, 0.97);
+
+    color: white;
+
+    visibility: hidden;
+
+    opacity: 0;
+
+    clip-path: inset(0 0 100% 0);
+
+    transition:
+        clip-path 0.65s cubic-bezier(0.77, 0, 0.175, 1),
+        opacity 0.3s ease,
+        visibility 0.65s ease;
+}
+
+
+.mobile-menu.open {
+    visibility: visible;
+
+    opacity: 1;
+
+    clip-path: inset(0 0 0 0);
+}
+
+
+/* Inner */
+
+.mobile-menu-inner {
+    width: 100%;
+    height: 100%;
+
+    padding:
+        125px
+        30px
+        30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   MOBILE MENU TOP
+========================================================= */
+
+.mobile-menu-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+.menu-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: var(--nav-red);
+}
+
+
+/* =========================================================
+   MOBILE LINKS
+========================================================= */
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    overflow-y: auto;
+}
+
+
+.mobile-nav-link {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 40px 1fr 30px;
+
+    align-items: center;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: clamp(30px, 9vw, 52px);
+
+    font-weight: 650;
+
+    letter-spacing: -2px;
+
+    transition:
+        color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+
+.mobile-nav-link:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.mobile-nav-link:hover {
+    color: var(--nav-red);
+
+    padding-left: 10px;
+}
+
+
+.mobile-link-number {
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 0;
+
+    color: rgba(255, 255, 255, 0.35);
+}
+
+
+.mobile-link-arrow {
+    font-size: 24px;
+
+    color: rgba(255, 255, 255, 0.35);
+
+    transition: transform 0.3s ease;
+}
+
+
+.mobile-nav-link:hover .mobile-link-arrow {
+    transform: translate(4px, -4px);
+
+    color: var(--nav-red);
+}
+
+
+/* =========================================================
+   MOBILE BOTTOM
+========================================================= */
+
+.mobile-menu-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding-top: 25px;
+}
+
+
+.bottom-label {
+    font-size: 9px;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    letter-spacing: 1.5px;
+}
+
+
+.mobile-menu-bottom p {
+    margin: 7px 0 0;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 13px;
+}
+
+
+.mobile-contact-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px 18px;
+
+    background: var(--nav-red);
+
+    border-radius: 14px;
+
+    color: white;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    font-size: 12px;
+    font-weight: 650;
+}
+
+
+.mobile-contact-button span {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .desktop-nav {
+        gap: 0;
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .nav-link::after {
+        left: 9px;
+        right: 9px;
+    }
+
+    .nav-cta {
+        padding: 0 14px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        top: 14px;
+    }
+
+    .floating-navbar {
+        width: calc(100% - 28px);
+
+        height: 66px;
+
+        padding: 0 8px 0 15px;
+
+        border-radius: 20px;
+    }
+
+
+    .brand {
+        gap: 9px;
+    }
+
+
+    .brand-mark {
+        width: 36px;
+        height: 36px;
+
+        font-size: 11px;
+    }
+
+
+    .brand-name strong {
+        font-size: 14px;
+    }
+
+
+    .brand-name small {
+        font-size: 7px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .desktop-nav,
+    .nav-cta {
+        display: none;
+    }
+
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+
+    .mobile-menu-inner {
+        padding:
+            105px
+            22px
+            22px;
+    }
+
+
+    .mobile-menu-bottom {
+        align-items: center;
+    }
+
+
+    .mobile-menu-bottom p {
+        max-width: 190px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .mobile-menu-inner {
+        padding:
+            95px
+            18px
+            18px;
+    }
+
+
+    .mobile-nav-link {
+        padding: 14px 0;
+
+        font-size: 31px;
+    }
+
+
+    .mobile-menu-bottom {
+        gap: 12px;
+    }
+
+
+    .mobile-menu-bottom p {
+        font-size: 11px;
+    }
+
+
+    .mobile-contact-button {
+        padding: 13px 14px;
+
+        font-size: 10px;
+    }
+
+}
