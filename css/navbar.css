@@ -743,3 +743,11 @@
     }
 
 }
+
+.mobile-nav-links {
+    gap: 0 !important;
+}
+
+.mobile-nav-link {
+    min-height: 0 !important;
+}
