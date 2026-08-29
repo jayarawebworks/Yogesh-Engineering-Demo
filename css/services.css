@@ -853,7 +853,7 @@
 
 .service-capabilities {
     background: #f4f2ee;
-    padding: 120px 0;
+    padding: 90px 0;
 }
 
 .services-container {
@@ -867,18 +867,18 @@
 .service-capabilities .section-label {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 
     font-family: "Inter", sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
+    font-size: 9px;
+    letter-spacing: 1.8px;
     color: #777;
 
-    margin-bottom: 55px;
+    margin-bottom: 38px;
 }
 
 .service-capabilities .section-label span {
-    width: 35px;
+    width: 28px;
     height: 1px;
     background: #c8202b;
 }
@@ -891,20 +891,19 @@
     justify-content: space-between;
     align-items: flex-end;
 
-    gap: 60px;
-
-    margin-bottom: 70px;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 .capabilities-header h2 {
     margin: 0;
 
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(48px, 5vw, 78px);
+    font-size: 48px;
     font-weight: 400;
-    line-height: .95;
+    line-height: 1;
 
-    letter-spacing: -3px;
+    letter-spacing: -1.5px;
     color: #111;
 }
 
@@ -913,15 +912,15 @@
 }
 
 .capabilities-header p {
-    max-width: 450px;
+    max-width: 400px;
 
     margin: 0;
 
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.6;
 
-    color: #555;
+    color: #666;
 }
 
 
@@ -941,16 +940,14 @@
 .capability-card {
     position: relative;
 
-    min-height: 330px;
+    min-height: 270px;
 
-    padding: 35px;
+    padding: 28px;
 
     border-right: 1px solid #d2d0cc;
     border-bottom: 1px solid #d2d0cc;
 
-    transition:
-        background .35s ease,
-        transform .35s ease;
+    transition: background .3s ease;
 }
 
 .capability-card:hover {
@@ -964,12 +961,12 @@
     display: block;
 
     font-family: "Inter", sans-serif;
-    font-size: 11px;
+    font-size: 9px;
     letter-spacing: 1px;
 
     color: #888;
 
-    margin-bottom: 55px;
+    margin-bottom: 38px;
 }
 
 
@@ -979,10 +976,11 @@
     margin: 0;
 
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 400;
 
-    line-height: 1;
+    line-height: 1.05;
+    letter-spacing: -.5px;
 
     color: #111;
 }
@@ -995,12 +993,12 @@
 /* DESCRIPTION */
 
 .capability-card p {
-    max-width: 480px;
+    max-width: 420px;
 
-    margin: 22px 0 35px;
+    margin: 16px 0 30px;
 
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
 
     color: #666;
@@ -1012,29 +1010,29 @@
 .capability-card a {
     position: absolute;
 
-    right: 35px;
-    bottom: 35px;
+    right: 28px;
+    bottom: 25px;
 
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 
     font-family: "Inter", sans-serif;
-    font-size: 10px;
-    letter-spacing: 2px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
 
     color: #111;
     text-decoration: none;
 }
 
 .capability-card a span {
-    font-size: 17px;
+    font-size: 14px;
 
     transition: transform .3s ease;
 }
 
 .capability-card:hover a span {
-    transform: translate(4px, -4px);
+    transform: translate(3px, -3px);
 }
 
 
@@ -1045,22 +1043,22 @@
 @media (max-width: 768px) {
 
     .service-capabilities {
-        padding: 80px 0;
+        padding: 65px 0;
     }
 
     .capabilities-header {
         display: block;
-        margin-bottom: 45px;
+        margin-bottom: 35px;
     }
 
     .capabilities-header h2 {
-        font-size: 48px;
-        letter-spacing: -2px;
+        font-size: 36px;
+        letter-spacing: -1px;
     }
 
     .capabilities-header p {
-        margin-top: 25px;
-        font-size: 14px;
+        margin-top: 20px;
+        font-size: 12px;
     }
 
     .capabilities-grid {
@@ -1068,25 +1066,24 @@
     }
 
     .capability-card {
-        min-height: 290px;
-        padding: 28px;
+        min-height: 240px;
+        padding: 24px;
     }
 
     .capability-number {
-        margin-bottom: 45px;
+        margin-bottom: 32px;
     }
 
     .capability-card h3 {
-        font-size: 32px;
+        font-size: 25px;
     }
 
     .capability-card p {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .capability-card a {
-        right: 28px;
-        bottom: 28px;
+        right: 24px;
+        bottom: 22px;
     }
-
 }
