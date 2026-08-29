@@ -1258,3 +1258,307 @@
         font-size: 11px;
     }
 }
+
+/* =====================================================
+   03. DETAILED SERVICE SHOWCASE
+===================================================== */
+
+.service-showcase {
+    background: #111214;
+    color: #fff;
+
+    padding: 90px 0;
+}
+
+
+/* =====================================================
+   SECTION LABEL
+===================================================== */
+
+.service-showcase .section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 55px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+
+    color: #999;
+}
+
+.service-showcase .section-label span {
+    width: 28px;
+    height: 1px;
+
+    background: #c8202b;
+}
+
+
+/* =====================================================
+   SHOWCASE ITEM
+===================================================== */
+
+.showcase-item {
+    display: grid;
+
+    grid-template-columns: 1fr 0.85fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    padding: 65px 0;
+
+    border-top: 1px solid #303033;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.showcase-content {
+    position: relative;
+
+    padding-left: 55px;
+}
+
+
+/* NUMBER */
+
+.showcase-number {
+    position: absolute;
+
+    left: 0;
+    top: 4px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+
+/* CATEGORY */
+
+.showcase-category {
+    margin: 0 0 18px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1.7px;
+
+    color: #999;
+}
+
+
+/* HEADING */
+
+.showcase-content h2 {
+    margin: 0;
+
+    max-width: 600px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(34px, 3.5vw, 52px);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -1.5px;
+
+    color: #fff;
+}
+
+.showcase-content h2 span {
+    color: #c8202b;
+}
+
+
+/* DESCRIPTION */
+
+.showcase-description {
+    max-width: 480px;
+
+    margin: 22px 0 30px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #999;
+}
+
+
+/* LINK */
+
+.showcase-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.showcase-link span {
+    font-size: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+.showcase-link:hover span {
+    transform: translate(4px, -4px);
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.showcase-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: #222;
+}
+
+
+.showcase-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+
+.showcase-item:hover .showcase-image img {
+    transform: scale(1.04);
+}
+
+
+/* IMAGE NUMBER */
+
+.image-number {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    padding: 7px 10px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    color: #fff;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .service-showcase {
+        padding: 65px 0;
+    }
+
+
+    .service-showcase .section-label {
+        margin-bottom: 35px;
+    }
+
+
+    .showcase-item {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 45px 0;
+    }
+
+
+    .showcase-content {
+        padding-left: 38px;
+    }
+
+
+    .showcase-number {
+        font-size: 8px;
+    }
+
+
+    .showcase-category {
+        font-size: 8px;
+
+        margin-bottom: 14px;
+    }
+
+
+    .showcase-content h2 {
+        font-size: 32px;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .showcase-description {
+        font-size: 11px;
+
+        line-height: 1.65;
+
+        margin: 18px 0 25px;
+    }
+
+
+    .showcase-link {
+        font-size: 8px;
+    }
+
+
+    .showcase-image {
+        aspect-ratio: 16 / 9;
+    }
+
+}
