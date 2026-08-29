@@ -1,1 +1,782 @@
 
+/* =========================================================
+   YOGESH ENGINEERING SERVICES
+   HOME PAGE
+   HERO SECTION
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100vh;
+
+    min-height: 650px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #111;
+
+}
+
+
+/* =========================================================
+   BACKGROUND VIDEO
+========================================================= */
+
+.hero-video {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 0;
+
+}
+
+
+/* =========================================================
+   VIDEO OVERLAY
+========================================================= */
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.35) 0%,
+            rgba(0, 0, 0, 0.45) 45%,
+            rgba(0, 0, 0, 0.68) 100%
+        );
+
+}
+
+
+/* Slight cinematic side darkness */
+
+.hero-overlay::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            transparent 20%,
+            rgba(0, 0, 0, 0.25) 100%
+        );
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding-top: 70px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.hero-eyebrow {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 28px;
+
+    color:
+        rgba(255, 255, 255, 0.78);
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.hero-eyebrow-line {
+
+    width: 28px;
+
+    height: 1px;
+
+    background: #c3212c;
+
+}
+
+
+.hero-eyebrow-dot {
+
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #c3212c;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(195, 33, 44, 0.15);
+
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.hero-title {
+
+    margin: 0;
+
+    color: #fff;
+
+    font-family:
+        "Space Grotesk",
+        Arial,
+        sans-serif;
+
+    font-size:
+        clamp(58px, 8vw, 115px);
+
+    font-weight: 700;
+
+    line-height: 0.88;
+
+    letter-spacing: -5px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* Red word */
+
+.hero-title span {
+
+    display: block;
+
+    color: #c3212c;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-description {
+
+    max-width: 570px;
+
+    margin:
+        32px
+        auto
+        0;
+
+    color:
+        rgba(255, 255, 255, 0.76);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.hero-cta {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    height: 54px;
+
+    margin-top: 32px;
+
+    padding:
+        0
+        22px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.5);
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    font-weight: 650;
+
+    letter-spacing: 1.2px;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+.hero-cta:hover {
+
+    background: #c3212c;
+
+    border-color: #c3212c;
+
+    transform: translateY(-3px);
+
+}
+
+
+.hero-cta-arrow {
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+.hero-cta:hover .hero-cta-arrow {
+
+    transform:
+        translate(3px, -3px);
+
+}
+
+
+/* =========================================================
+   BOTTOM LEFT INFORMATION
+========================================================= */
+
+.hero-bottom-left {
+
+    position: absolute;
+
+    left: 5vw;
+
+    bottom: 35px;
+
+    z-index: 3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.hero-bottom-number {
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.hero-bottom-text {
+
+    color:
+        rgba(255, 255, 255, 0.55);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* =========================================================
+   BOTTOM RIGHT SCROLL
+========================================================= */
+
+.hero-bottom-right {
+
+    position: absolute;
+
+    right: 5vw;
+
+    bottom: 35px;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+}
+
+
+.hero-scroll-text {
+
+    color:
+        rgba(255, 255, 255, 0.65);
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.7px;
+
+}
+
+
+.hero-scroll-line {
+
+    width: 55px;
+
+    height: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.65);
+
+}
+
+
+.hero-scroll-arrow {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 25px;
+
+    height: 25px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.45);
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    animation:
+        scrollBounce 2s infinite;
+
+}
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+@keyframes scrollBounce {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(5px);
+
+    }
+
+}
+
+
+/* =========================================================
+   HERO TEXT ANIMATION
+========================================================= */
+
+.hero-eyebrow {
+
+    animation:
+        heroFadeUp 1s ease both;
+
+}
+
+
+.hero-title {
+
+    animation:
+        heroFadeUp 1s ease 0.15s both;
+
+}
+
+
+.hero-description {
+
+    animation:
+        heroFadeUp 1s ease 0.3s both;
+
+}
+
+
+.hero-cta {
+
+    animation:
+        heroFadeUp 1s ease 0.45s both;
+
+}
+
+
+@keyframes heroFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero-title {
+
+        font-size:
+            clamp(55px, 10vw, 90px);
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .hero-description {
+
+        max-width: 500px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+
+        height: 100svh;
+
+        min-height: 600px;
+
+    }
+
+
+    .hero-video {
+
+        object-position: center;
+
+    }
+
+
+    .hero-overlay {
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.42),
+                rgba(0, 0, 0, 0.72)
+            );
+
+    }
+
+
+    .hero-content {
+
+        width: calc(100% - 32px);
+
+        padding-top: 70px;
+
+    }
+
+
+    .hero-eyebrow {
+
+        gap: 7px;
+
+        margin-bottom: 22px;
+
+        font-size: 7px;
+
+        letter-spacing: 1.2px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .hero-eyebrow-line {
+
+        width: 20px;
+
+    }
+
+
+    .hero-eyebrow-dot {
+
+        width: 4px;
+
+        height: 4px;
+
+    }
+
+
+    .hero-title {
+
+        font-size: 48px;
+
+        line-height: 0.9;
+
+        letter-spacing: -2.5px;
+
+    }
+
+
+    .hero-description {
+
+        max-width: 340px;
+
+        margin-top: 23px;
+
+        font-size: 12px;
+
+        line-height: 1.65;
+
+    }
+
+
+    .hero-cta {
+
+        height: 48px;
+
+        margin-top: 25px;
+
+        padding: 0 18px;
+
+        gap: 16px;
+
+        font-size: 9px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .hero-cta-arrow {
+
+        font-size: 16px;
+
+    }
+
+
+    .hero-bottom-left {
+
+        left: 20px;
+
+        bottom: 25px;
+
+    }
+
+
+    .hero-bottom-right {
+
+        right: 20px;
+
+        bottom: 25px;
+
+    }
+
+
+    .hero-scroll-text {
+
+        display: none;
+
+    }
+
+
+    .hero-scroll-line {
+
+        width: 30px;
+
+    }
+
+
+    .hero-scroll-arrow {
+
+        width: 23px;
+
+        height: 23px;
+
+    }
+
+
+    .hero-bottom-number {
+
+        font-size: 10px;
+
+    }
+
+
+    .hero-bottom-text {
+
+        font-size: 6px;
+
+        letter-spacing: 1px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero-title {
+
+        font-size: 42px;
+
+    }
+
+
+    .hero-description {
+
+        max-width: 300px;
+
+        font-size: 11px;
+
+    }
+
+
+    .hero-content {
+
+        padding-top: 60px;
+
+    }
+
+}
