@@ -1087,3 +1087,174 @@
         bottom: 22px;
     }
 }
+/* =====================================================
+   WHY US
+===================================================== */
+
+.why-us {
+    background: #111214;
+    color: #fff;
+    padding: 90px 0;
+}
+
+.why-us .section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.8px;
+    color: #999;
+
+    margin-bottom: 40px;
+}
+
+.why-us .section-label span {
+    width: 28px;
+    height: 1px;
+    background: #c8202b;
+}
+
+
+/* HEADER */
+
+.why-us-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 50px;
+    margin-bottom: 55px;
+}
+
+.why-us-header h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+}
+
+.why-us-header h2 span {
+    color: #c8202b;
+}
+
+.why-us-header p {
+    max-width: 400px;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #999;
+}
+
+
+/* LIST */
+
+.why-us-list {
+    border-top: 1px solid #303033;
+}
+
+
+/* ITEM */
+
+.why-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+
+    gap: 25px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid #303033;
+}
+
+.why-number {
+    font-family: "Inter", sans-serif;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #777;
+    padding-top: 4px;
+}
+
+.why-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 40px;
+}
+
+.why-content h3 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.why-content p {
+    max-width: 430px;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: #999;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .why-us {
+        padding: 65px 0;
+    }
+
+    .why-us-header {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .why-us-header h2 {
+        font-size: 36px;
+    }
+
+    .why-us-header p {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .why-item {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+        padding: 24px 0;
+    }
+
+    .why-content {
+        display: block;
+    }
+
+    .why-content h3 {
+        font-size: 22px;
+    }
+
+    .why-content p {
+        margin-top: 10px;
+        font-size: 11px;
+    }
+}
