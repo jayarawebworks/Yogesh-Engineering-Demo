@@ -688,23 +688,20 @@
             18px;
     }
 
-
     .mobile-nav-link {
-        padding: 14px 0;
+        padding: 11px 0;
 
-        font-size: 31px;
+        font-size: 25px;
+        letter-spacing: -0.8px;
     }
-
 
     .mobile-menu-bottom {
         gap: 12px;
     }
 
-
     .mobile-menu-bottom p {
         font-size: 11px;
     }
-
 
     .mobile-contact-button {
         padding: 13px 14px;
