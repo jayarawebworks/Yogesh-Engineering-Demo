@@ -201,14 +201,13 @@
         Arial,
         sans-serif;
 
-    font-size:
-        clamp(58px, 8vw, 115px);
+   font-size: clamp(48px, 6vw, 84px);
 
     font-weight: 700;
 
     line-height: 0.88;
 
-    letter-spacing: -5px;
+    letter-spacing: -4px;
 
     text-transform: uppercase;
 
