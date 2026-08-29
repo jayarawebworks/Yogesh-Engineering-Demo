@@ -712,42 +712,63 @@
 }
 
 /* =========================================================
-   FINAL MOBILE MENU SIZE OVERRIDE
+   MOBILE MENU — FINAL ALIGNMENT
 ========================================================= */
 
 @media (max-width: 768px) {
 
     .mobile-nav-link {
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+        display: grid;
+
+        grid-template-columns: 40px minmax(0, 1fr) 24px;
+
+        align-items: center;
+
+        padding: 10px 4px 10px 0 !important;
+
         font-size: 22px !important;
         line-height: 1.2 !important;
         letter-spacing: -0.5px !important;
-
-        padding: 11px 0 !important;
-    }
-
-    .mobile-link-number {
-        font-size: 9px !important;
     }
 
     .mobile-link-arrow {
-        font-size: 19px !important;
+        width: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        font-size: 18px !important;
+
+        transform: none;
     }
+
+    .mobile-nav-link:hover .mobile-link-arrow {
+        transform: translate(0, -3px);
+    }
+
 }
 
 
 @media (max-width: 420px) {
 
     .mobile-nav-link {
+        grid-template-columns: 36px minmax(0, 1fr) 22px;
+
+        padding-right: 2px !important;
+
         font-size: 22px !important;
-        padding: 10px 0 !important;
     }
 
-}
+    .mobile-link-arrow {
+        width: 22px;
 
-.mobile-nav-links {
-    gap: 0 !important;
-}
+        font-size: 17px !important;
+    }
 
-.mobile-nav-link {
-    min-height: 0 !important;
 }
