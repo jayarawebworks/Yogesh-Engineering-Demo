@@ -710,3 +710,36 @@
     }
 
 }
+
+/* =========================================================
+   FINAL MOBILE MENU SIZE OVERRIDE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .mobile-nav-link {
+        font-size: 22px !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.5px !important;
+
+        padding: 11px 0 !important;
+    }
+
+    .mobile-link-number {
+        font-size: 9px !important;
+    }
+
+    .mobile-link-arrow {
+        font-size: 19px !important;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .mobile-nav-link {
+        font-size: 22px !important;
+        padding: 10px 0 !important;
+    }
+
+}
