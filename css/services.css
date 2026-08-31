@@ -1562,3 +1562,180 @@
     }
 
 }
+
+/* =====================================================
+   07. SERVICE CTA
+===================================================== */
+
+.service-cta {
+    background: #c8202b;
+    color: #fff;
+
+    padding: 90px 0;
+}
+
+
+.service-cta-container {
+    width: min(1400px, 90%);
+    margin: 0 auto;
+}
+
+
+/* LABEL */
+
+.service-cta-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1.8px;
+
+    color: rgba(255,255,255,0.75);
+
+    margin-bottom: 45px;
+}
+
+.service-cta-label span {
+    width: 28px;
+    height: 1px;
+
+    background: #fff;
+}
+
+
+/* CONTENT */
+
+.service-cta-content {
+    max-width: 800px;
+}
+
+
+.service-cta-content h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 4.5vw, 60px);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -1.5px;
+}
+
+
+.service-cta-content h2 span {
+    color: #111;
+}
+
+
+/* TEXT */
+
+.service-cta-content p {
+    max-width: 480px;
+
+    margin: 22px 0 30px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    color: rgba(255,255,255,0.8);
+}
+
+
+/* BUTTON */
+
+.service-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 18px;
+
+    padding: 14px 20px;
+
+    background: #111;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.service-cta-button span {
+    font-size: 16px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.service-cta-button:hover {
+    background: #fff;
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+.service-cta-button:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .service-cta {
+        padding: 65px 0;
+    }
+
+
+    .service-cta-label {
+        margin-bottom: 35px;
+
+        font-size: 8px;
+    }
+
+
+    .service-cta-content h2 {
+        font-size: 36px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .service-cta-content p {
+        font-size: 11px;
+
+        margin: 18px 0 25px;
+    }
+
+
+    .service-cta-button {
+        padding: 13px 17px;
+
+        font-size: 8px;
+    }
+
+}
