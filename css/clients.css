@@ -465,3 +465,234 @@
     }
 
 }
+
+/* =====================================================
+   03. INDUSTRIES WE SERVE
+===================================================== */
+
+.client-industries {
+    background: #111;
+    color: #f4f2ee;
+
+    padding: 100px 0;
+}
+
+
+/* SECTION LABEL */
+
+.client-industries .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 55px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #999;
+}
+
+.client-industries .section-label span {
+    width: 35px;
+    height: 1px;
+
+    background: #c8202b;
+}
+
+
+/* HEADER */
+
+.industries-header {
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.65fr;
+
+    gap: 100px;
+
+    align-items: end;
+
+    margin-bottom: 70px;
+}
+
+
+/* HEADING */
+
+.industries-header h2 {
+    margin: 0;
+
+    max-width: 700px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+}
+
+.industries-header h2 span {
+    color: #c8202b;
+}
+
+
+/* DESCRIPTION */
+
+.industries-header p {
+    max-width: 430px;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #aaa;
+}
+
+
+/* =====================================================
+   INDUSTRY LIST
+===================================================== */
+
+.industries-list {
+    border-top: 1px solid #333;
+}
+
+
+/* ITEM */
+
+.industry-item {
+    display: grid;
+
+    grid-template-columns: 70px 1fr 40px;
+
+    align-items: center;
+
+    min-height: 82px;
+
+    border-bottom: 1px solid #333;
+
+    transition:
+        padding 0.35s ease,
+        background 0.35s ease;
+}
+
+
+/* NUMBER */
+
+.industry-number {
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    color: #777;
+}
+
+
+/* NAME */
+
+.industry-name {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    letter-spacing: -0.3px;
+
+    transition: color 0.3s ease;
+}
+
+
+/* ARROW */
+
+.industry-arrow {
+    font-family: "Inter", sans-serif;
+
+    font-size: 17px;
+
+    text-align: right;
+
+    color: #888;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* HOVER */
+
+.industry-item:hover {
+    padding-left: 12px;
+}
+
+.industry-item:hover .industry-name {
+    color: #c8202b;
+}
+
+.industry-item:hover .industry-arrow {
+    color: #c8202b;
+
+    transform: translate(4px, -4px);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .client-industries {
+        padding: 70px 0;
+    }
+
+    .industries-header {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 45px;
+    }
+
+    .industries-header h2 {
+        font-size: 36px;
+
+        letter-spacing: -1px;
+    }
+
+    .industries-header p {
+        font-size: 11px;
+    }
+
+    .industry-item {
+        grid-template-columns: 45px 1fr 30px;
+
+        min-height: 68px;
+    }
+
+    .industry-name {
+        font-size: 18px;
+    }
+
+    .industry-number {
+        font-size: 8px;
+    }
+
+    .industry-arrow {
+        font-size: 15px;
+    }
+
+}
