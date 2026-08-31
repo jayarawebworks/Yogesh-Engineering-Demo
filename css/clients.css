@@ -696,3 +696,187 @@
     }
 
 }
+
+/* =====================================================
+   04. CLIENT SHOWCASE
+===================================================== */
+
+.client-showcase {
+    background: #f4f2ee;
+    color: #111;
+
+    padding: 100px 0;
+}
+
+
+/* SECTION LABEL */
+
+.client-showcase .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 55px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+.client-showcase .section-label span {
+    width: 35px;
+    height: 1px;
+
+    background: #c8202b;
+}
+
+
+/* HEADER */
+
+.showcase-header {
+    display: grid;
+
+    grid-template-columns: 1.1fr 0.65fr;
+
+    gap: 100px;
+
+    align-items: end;
+
+    margin-bottom: 65px;
+}
+
+
+/* HEADING */
+
+.showcase-header h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(40px, 4vw, 58px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+}
+
+.showcase-header h2 span {
+    color: #c8202b;
+}
+
+
+/* DESCRIPTION */
+
+.showcase-header p {
+    max-width: 430px;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #666;
+}
+
+
+/* =====================================================
+   CLIENT LOGO GRID
+===================================================== */
+
+.client-logo-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #d5d2cc;
+
+    border-left: 1px solid #d5d2cc;
+}
+
+
+/* LOGO BOX */
+
+.client-logo {
+    height: 130px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-right: 1px solid #d5d2cc;
+    border-bottom: 1px solid #d5d2cc;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    color: #999;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* HOVER */
+
+.client-logo:hover {
+    background: #111;
+
+    color: #fff;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .client-showcase {
+        padding: 70px 0;
+    }
+
+    .showcase-header {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 45px;
+    }
+
+    .showcase-header h2 {
+        font-size: 36px;
+
+        letter-spacing: -1px;
+    }
+
+    .showcase-header p {
+        font-size: 11px;
+    }
+
+    .client-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-logo {
+        height: 100px;
+
+        font-size: 8px;
+    }
+
+}
