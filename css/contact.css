@@ -1,1 +1,474 @@
+/* =====================================================
+   CONTACT PAGE
+===================================================== */
 
+.contact-enquiry {
+    background: #f4f2ee;
+    color: #111;
+
+    padding: 150px 0 110px;
+
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.contact-container {
+    width: min(1450px, 84%);
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION LABEL
+===================================================== */
+
+.contact-enquiry .section-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 65px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #777;
+}
+
+.contact-enquiry .section-label span {
+    width: 35px;
+
+    height: 1px;
+
+    background: #c8202b;
+}
+
+
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.contact-enquiry-grid {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 120px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.contact-intro {
+    padding-top: 5px;
+}
+
+
+.contact-intro h1 {
+    margin: 0;
+
+    max-width: 550px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(42px, 4.5vw, 62px);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -1.8px;
+}
+
+
+.contact-intro h1 span {
+    display: block;
+
+    color: #c8202b;
+}
+
+
+.contact-intro > p {
+    max-width: 390px;
+
+    margin: 25px 0 55px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #666;
+}
+
+
+/* =====================================================
+   CONTACT DETAILS
+===================================================== */
+
+.contact-details {
+    border-top: 1px solid #d5d2cc;
+}
+
+
+.contact-detail {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 20px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #d5d2cc;
+}
+
+
+.contact-detail span {
+    font-family: "Inter", sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    color: #888;
+}
+
+
+.contact-detail a {
+    font-family: "Inter", sans-serif;
+
+    font-size: 11px;
+
+    color: #222;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+
+.contact-detail a:hover {
+    color: #c8202b;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.enquiry-form {
+    width: 100%;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+
+.form-group label {
+    margin-bottom: 9px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    color: #666;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d0cdc7;
+
+    border-radius: 0;
+
+    background: transparent;
+
+    padding: 13px 14px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 11px;
+
+    color: #222;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.form-group input,
+.form-group select {
+    height: 46px;
+}
+
+
+.form-group textarea {
+    min-height: 125px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* FOCUS */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: #222;
+
+    background: rgba(255, 255, 255, 0.35);
+}
+
+
+/* SELECT */
+
+.form-group select {
+    appearance: none;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   WHATSAPP BUTTON
+===================================================== */
+
+.whatsapp-submit {
+
+    width: 100%;
+
+    min-height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    border: 1px solid #222;
+
+    border-radius: 0;
+
+    background: #222;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.whatsapp-submit span {
+    font-size: 17px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.whatsapp-submit:hover {
+    background: #c8202b;
+
+    border-color: #c8202b;
+}
+
+
+.whatsapp-submit:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* =====================================================
+   FORM NOTE
+===================================================== */
+
+.form-note {
+
+    margin: 13px 0 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    color: #999;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .contact-enquiry {
+        padding: 120px 0 80px;
+    }
+
+
+    .contact-container {
+        width: 88%;
+    }
+
+
+    .contact-enquiry-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 65px;
+    }
+
+
+    .contact-intro h1 {
+        font-size: 42px;
+    }
+
+
+    .contact-intro > p {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-enquiry {
+        padding: 105px 0 70px;
+    }
+
+
+    .contact-enquiry .section-label {
+        margin-bottom: 40px;
+
+        font-size: 8px;
+    }
+
+
+    .contact-enquiry-grid {
+        gap: 50px;
+    }
+
+
+    .contact-intro h1 {
+        font-size: 37px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .contact-intro > p {
+        font-size: 11px;
+
+        margin: 20px 0 35px;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+
+    .form-group input,
+    .form-group select {
+        height: 44px;
+    }
+
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 11px;
+    }
+
+
+    .whatsapp-submit {
+        min-height: 50px;
+
+        font-size: 8px;
+    }
+
+}
