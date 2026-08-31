@@ -1,1 +1,266 @@
+/* =====================================================
+   01. CLIENTS HERO
+===================================================== */
 
+.clients-hero {
+    position: relative;
+
+    width: 100%;
+    height: 92vh;
+    min-height: 620px;
+
+    overflow: hidden;
+
+    background: #111;
+    color: #fff;
+}
+
+
+/* =====================================================
+   BACKGROUND VIDEO
+===================================================== */
+
+.clients-hero-video {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+
+/* =====================================================
+   OVERLAY
+===================================================== */
+
+.clients-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.52);
+
+    z-index: 1;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.clients-hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1650px, 90%);
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 145px 0 35px;
+}
+
+
+/* =====================================================
+   TOP
+===================================================== */
+
+.clients-hero-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 1.8px;
+
+    color: rgba(255,255,255,0.72);
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.clients-hero-content {
+    max-width: 850px;
+}
+
+
+/* EYEBROW */
+
+.clients-eyebrow {
+    margin: 0 0 18px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: rgba(255,255,255,0.7);
+}
+
+
+/* HEADING */
+
+.clients-hero-content h1 {
+    margin: 0;
+
+    max-width: 780px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(44px, 5vw, 68px);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+}
+
+
+.clients-hero-content h1 span {
+    color: #c8202b;
+}
+
+
+/* DESCRIPTION */
+
+.clients-hero-description {
+    max-width: 430px;
+
+    margin: 22px 0 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.65;
+
+    color: rgba(255,255,255,0.72);
+}
+
+
+/* =====================================================
+   BOTTOM
+===================================================== */
+
+.clients-hero-bottom {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 1.7px;
+
+    color: rgba(255,255,255,0.75);
+}
+
+
+.clients-hero-arrow {
+    font-size: 15px;
+
+    animation: clientsArrow 1.8s ease-in-out infinite;
+}
+
+
+@keyframes clientsArrow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .clients-hero {
+        height: 88vh;
+        min-height: 560px;
+    }
+
+
+    .clients-hero-container {
+        width: 88%;
+
+        padding: 120px 0 28px;
+    }
+
+
+    .clients-hero-top {
+        font-size: 8px;
+
+        letter-spacing: 1.3px;
+    }
+
+
+    .clients-eyebrow {
+        font-size: 8px;
+
+        letter-spacing: 1.4px;
+
+        margin-bottom: 14px;
+    }
+
+
+    .clients-hero-content h1 {
+        font-size: 38px;
+
+        line-height: 1;
+
+        letter-spacing: -1px;
+    }
+
+
+    .clients-hero-description {
+        max-width: 310px;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+
+        margin-top: 18px;
+    }
+
+
+    .clients-hero-bottom {
+        font-size: 7px;
+
+        letter-spacing: 1.4px;
+    }
+
+}
