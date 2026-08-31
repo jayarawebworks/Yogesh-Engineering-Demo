@@ -119,54 +119,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
- /* =====================================================
-       WHATSAPP ENQUIRY FORM
-    ===================================================== */
+/* =========================================================
+   WHATSAPP ENQUIRY FORM
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
 
     const enquiryForm =
         document.getElementById("whatsappEnquiryForm");
 
-
-    if (enquiryForm) {
-
-        enquiryForm.addEventListener(
-            "submit",
-            function (event) {
-
-                event.preventDefault();
+    if (!enquiryForm) return;
 
 
-                /* -----------------------------------------
-                   GET FORM VALUES
-                ----------------------------------------- */
+    enquiryForm.addEventListener("submit", function (event) {
 
-                const name =
-                    document.getElementById("name")?.value.trim() || "";
-
-                const company =
-                    document.getElementById("company")?.value.trim() || "";
-
-                const phone =
-                    document.getElementById("phone")?.value.trim() || "";
-
-                const email =
-                    document.getElementById("email")?.value.trim() || "";
-
-                const service =
-                    document.getElementById("service")?.value || "";
-
-                const machine =
-                    document.getElementById("machine")?.value.trim() || "";
-
-                const message =
-                    document.getElementById("message")?.value.trim() || "";
+        event.preventDefault();
 
 
-                /* -----------------------------------------
-                   CREATE WHATSAPP MESSAGE
-                ----------------------------------------- */
+        /* -----------------------------------------
+           GET FORM VALUES
+        ----------------------------------------- */
 
-                const whatsappMessage =
+        const name =
+            document.getElementById("name").value.trim();
+
+        const company =
+            document.getElementById("company").value.trim();
+
+        const phone =
+            document.getElementById("phone").value.trim();
+
+        const email =
+            document.getElementById("email").value.trim();
+
+        const service =
+            document.getElementById("service").value;
+
+        const machine =
+            document.getElementById("machine").value.trim();
+
+        const message =
+            document.getElementById("message").value.trim();
+
+
+        /* -----------------------------------------
+           CREATE WHATSAPP MESSAGE
+        ----------------------------------------- */
+
+        const whatsappMessage =
 `Hello Yogesh Engineering Services,
 
 I would like to enquire about your engineering services.
@@ -177,46 +177,44 @@ Phone: ${phone}
 Email: ${email || "Not provided"}
 
 Service Required:
-${service || "Not specified"}
+${service}
 
 Machine / Equipment:
 ${machine || "Not provided"}
 
 Requirement:
-${message || "Not provided"}
+${message}
 
 Thank you.`;
 
 
-                /* -----------------------------------------
-                   COMPANY WHATSAPP NUMBER
-                ----------------------------------------- */
+        /* -----------------------------------------
+           COMPANY WHATSAPP NUMBER
+           +91 7972219776
+           wa.me requires digits only
+        ----------------------------------------- */
 
-                const whatsappNumber =
-                    "917972219776";
-
-
-                /* -----------------------------------------
-                   CREATE WHATSAPP URL
-                ----------------------------------------- */
-
-                const whatsappURL =
-                    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappNumber = "917972219776";
 
 
-                /* -----------------------------------------
-                   OPEN WHATSAPP
-                ----------------------------------------- */
+        /* -----------------------------------------
+           CREATE WHATSAPP URL
+        ----------------------------------------- */
 
-                window.open(
-                    whatsappURL,
-                    "_blank",
-                    "noopener,noreferrer"
-                );
+        const whatsappURL =
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
-            }
+
+        /* -----------------------------------------
+           OPEN WHATSAPP
+        ----------------------------------------- */
+
+        window.open(
+            whatsappURL,
+            "_blank",
+            "noopener,noreferrer"
         );
 
-    }
+    });
 
 });
