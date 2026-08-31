@@ -185,7 +185,7 @@ Thank you.`;
          * 91XXXXXXXXXX
          */
 
-        const whatsappNumber = "91XXXXXXXXXX";
+        const whatsappNumber = "91 7972219776";
 
 
         const whatsappURL =
