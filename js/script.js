@@ -182,14 +182,14 @@ Thank you.`;
          * the company's actual WhatsApp number.
          *
          * Format:
-         * 91XXXXXXXXXX
+         * 91 7972219776
          */
 
         const whatsappNumber = "91 7972219776";
 
 
         const whatsappURL =
-            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+            `https://wa.me/${ 7972219776}?text=${encodeURIComponent(whatsappMessage)}`;
 
 
         window.open(whatsappURL, "_blank");
