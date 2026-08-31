@@ -794,3 +794,183 @@
     }
 
 }
+
+/* =====================================================
+   CONTACT CTA
+===================================================== */
+
+.contact-cta {
+    background: #c8202b;
+    color: #fff;
+
+    padding: 120px 20px;
+
+    text-align: center;
+}
+
+
+.contact-cta-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* LABEL */
+
+.contact-cta-label {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.contact-cta-label span {
+    width: 30px;
+    height: 1px;
+
+    background: rgba(255,255,255,0.7);
+}
+
+
+/* HEADING */
+
+.contact-cta h2 {
+    margin: 0;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(48px, 6vw, 76px);
+
+    font-weight: 500;
+
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+}
+
+
+.contact-cta h2 span {
+    display: block;
+
+    color: #111;
+}
+
+
+/* DESCRIPTION */
+
+.contact-cta p {
+    max-width: 480px;
+
+    margin: 30px auto 38px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: rgba(255,255,255,0.85);
+}
+
+
+/* BUTTON */
+
+.contact-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+
+    min-width: 240px;
+
+    padding: 16px 20px;
+
+    background: #111;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.contact-cta-button span {
+    font-size: 17px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.contact-cta-button:hover {
+    background: #fff;
+
+    color: #111;
+
+    transform: translateY(-3px);
+}
+
+
+.contact-cta-button:hover span {
+    transform: translate(4px, -4px);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .contact-cta {
+        padding: 85px 20px;
+    }
+
+    .contact-cta h2 {
+        font-size: 44px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .contact-cta p {
+        font-size: 11px;
+
+        margin: 25px auto 30px;
+    }
+
+    .contact-cta-button {
+        width: 100%;
+
+        max-width: 300px;
+
+        box-sizing: border-box;
+    }
+
+}
