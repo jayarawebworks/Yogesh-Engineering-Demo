@@ -880,3 +880,220 @@
     }
 
 }
+
+/* =====================================================
+   05. CLIENT CTA
+===================================================== */
+
+.clients-cta {
+    background: #111;
+    color: #f4f2ee;
+
+    padding: 105px 0 35px;
+}
+
+
+.clients-cta-container {
+    width: min(1550px, 84%);
+    margin: 0 auto;
+}
+
+
+/* LABEL */
+
+.clients-cta-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 55px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #888;
+}
+
+.clients-cta-label span {
+    width: 35px;
+    height: 1px;
+
+    background: #c8202b;
+}
+
+
+/* CONTENT */
+
+.clients-cta-content {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.55fr;
+
+    gap: 100px;
+
+    align-items: end;
+}
+
+
+/* HEADING */
+
+.clients-cta-content h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(40px, 4.5vw, 64px);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+}
+
+.clients-cta-content h2 span {
+    color: #c8202b;
+}
+
+
+/* RIGHT */
+
+.clients-cta-right {
+    max-width: 380px;
+}
+
+.clients-cta-right p {
+    margin: 0 0 28px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #999;
+}
+
+
+/* BUTTON */
+
+.clients-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 45px;
+
+    padding: 15px 20px;
+
+    min-width: 170px;
+
+    border: 1px solid #555;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.clients-cta-button span {
+    font-size: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+.clients-cta-button:hover {
+    background: #c8202b;
+
+    border-color: #c8202b;
+}
+
+.clients-cta-button:hover span {
+    transform: translate(3px, -3px);
+}
+
+
+/* BOTTOM */
+
+.clients-cta-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 110px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #333;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #666;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .clients-cta {
+        padding: 70px 0 25px;
+    }
+
+    .clients-cta-container {
+        width: 88%;
+    }
+
+    .clients-cta-label {
+        margin-bottom: 40px;
+    }
+
+    .clients-cta-content {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .clients-cta-content h2 {
+        font-size: 37px;
+
+        letter-spacing: -1px;
+    }
+
+    .clients-cta-right {
+        max-width: 100%;
+    }
+
+    .clients-cta-right p {
+        font-size: 11px;
+    }
+
+    .clients-cta-bottom {
+        margin-top: 65px;
+
+        font-size: 7px;
+    }
+
+}
