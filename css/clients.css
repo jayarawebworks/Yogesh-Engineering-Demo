@@ -2071,3 +2071,196 @@
     }
 
 }
+
+
+/* =====================================================
+   05. GALLERY CTA
+===================================================== */
+
+.gallery-cta {
+    background: #111;
+    color: #f4f2ee;
+
+    padding: 115px 0;
+}
+
+
+.gallery-cta-container {
+    width: min(1550px, 84%);
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.gallery-cta-label {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: #888;
+}
+
+
+.gallery-cta-label span {
+    width: 30px;
+
+    height: 1px;
+
+    background: #c8202b;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.gallery-cta h2 {
+    margin: 0 auto;
+
+    max-width: 800px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(42px, 5vw, 68px);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+}
+
+
+.gallery-cta h2 span {
+    display: block;
+
+    color: #c8202b;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.gallery-cta p {
+    max-width: 430px;
+
+    margin: 25px auto 32px;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: #888;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.gallery-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    padding: 14px 22px;
+
+    border: 1px solid #444;
+
+    color: #f4f2ee;
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.gallery-cta-button span {
+    font-size: 14px;
+}
+
+
+.gallery-cta-button:hover {
+    background: #c8202b;
+
+    border-color: #c8202b;
+
+    color: #fff;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .gallery-cta {
+        padding: 80px 0;
+    }
+
+
+    .gallery-cta-container {
+        width: 88%;
+    }
+
+
+    .gallery-cta-label {
+        font-size: 7px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .gallery-cta h2 {
+        font-size: 38px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .gallery-cta p {
+        max-width: 320px;
+
+        font-size: 10px;
+
+        margin-top: 20px;
+    }
+
+}
