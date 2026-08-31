@@ -119,43 +119,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+ /* =====================================================
+       WHATSAPP ENQUIRY FORM
+    ===================================================== */
 
-/* =====================================================
-   WHATSAPP ENQUIRY FORM
-===================================================== */
-
-const enquiryForm = document.getElementById("whatsappEnquiryForm");
-
-if (enquiryForm) {
-
-    enquiryForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
+    const enquiryForm =
+        document.getElementById("whatsappEnquiryForm");
 
 
-        const name =
-            document.getElementById("name").value.trim();
+    if (enquiryForm) {
 
-        const company =
-            document.getElementById("company").value.trim();
+        enquiryForm.addEventListener(
+            "submit",
+            function (event) {
 
-        const phone =
-            document.getElementById("phone").value.trim();
-
-        const email =
-            document.getElementById("email").value.trim();
-
-        const service =
-            document.getElementById("service").value;
-
-        const machine =
-            document.getElementById("machine").value.trim();
-
-        const message =
-            document.getElementById("message").value.trim();
+                event.preventDefault();
 
 
-        const whatsappMessage =
+                /* -----------------------------------------
+                   GET FORM VALUES
+                ----------------------------------------- */
+
+                const name =
+                    document.getElementById("name")?.value.trim() || "";
+
+                const company =
+                    document.getElementById("company")?.value.trim() || "";
+
+                const phone =
+                    document.getElementById("phone")?.value.trim() || "";
+
+                const email =
+                    document.getElementById("email")?.value.trim() || "";
+
+                const service =
+                    document.getElementById("service")?.value || "";
+
+                const machine =
+                    document.getElementById("machine")?.value.trim() || "";
+
+                const message =
+                    document.getElementById("message")?.value.trim() || "";
+
+
+                /* -----------------------------------------
+                   CREATE WHATSAPP MESSAGE
+                ----------------------------------------- */
+
+                const whatsappMessage =
 `Hello Yogesh Engineering Services,
 
 I would like to enquire about your engineering services.
@@ -166,34 +177,46 @@ Phone: ${phone}
 Email: ${email || "Not provided"}
 
 Service Required:
-${service}
+${service || "Not specified"}
 
 Machine / Equipment:
 ${machine || "Not provided"}
 
 Requirement:
-${message}
+${message || "Not provided"}
 
 Thank you.`;
 
 
-        /*
-         * Replace this number with
-         * the company's actual WhatsApp number.
-         *
-         * Format:
-         * 91 7972219776
-         */
+                /* -----------------------------------------
+                   COMPANY WHATSAPP NUMBER
+                ----------------------------------------- */
 
-        const whatsappNumber = "91 7972219776";
+                const whatsappNumber =
+                    "917972219776";
 
 
-        const whatsappURL =
-            `https://wa.me/${ 7972219776}?text=${encodeURIComponent(whatsappMessage)}`;
+                /* -----------------------------------------
+                   CREATE WHATSAPP URL
+                ----------------------------------------- */
+
+                const whatsappURL =
+                    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
 
-        window.open(whatsappURL, "_blank");
+                /* -----------------------------------------
+                   OPEN WHATSAPP
+                ----------------------------------------- */
 
-    });
+                window.open(
+                    whatsappURL,
+                    "_blank",
+                    "noopener,noreferrer"
+                );
 
-}
+            }
+        );
+
+    }
+
+});
