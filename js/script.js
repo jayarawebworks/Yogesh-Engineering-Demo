@@ -118,3 +118,82 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+/* =====================================================
+   WHATSAPP ENQUIRY FORM
+===================================================== */
+
+const enquiryForm = document.getElementById("whatsappEnquiryForm");
+
+if (enquiryForm) {
+
+    enquiryForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+
+        const name =
+            document.getElementById("name").value.trim();
+
+        const company =
+            document.getElementById("company").value.trim();
+
+        const phone =
+            document.getElementById("phone").value.trim();
+
+        const email =
+            document.getElementById("email").value.trim();
+
+        const service =
+            document.getElementById("service").value;
+
+        const machine =
+            document.getElementById("machine").value.trim();
+
+        const message =
+            document.getElementById("message").value.trim();
+
+
+        const whatsappMessage =
+`Hello Yogesh Engineering Services,
+
+I would like to enquire about your engineering services.
+
+Name: ${name}
+Company: ${company || "Not provided"}
+Phone: ${phone}
+Email: ${email || "Not provided"}
+
+Service Required:
+${service}
+
+Machine / Equipment:
+${machine || "Not provided"}
+
+Requirement:
+${message}
+
+Thank you.`;
+
+
+        /*
+         * Replace this number with
+         * the company's actual WhatsApp number.
+         *
+         * Format:
+         * 91XXXXXXXXXX
+         */
+
+        const whatsappNumber = "91XXXXXXXXXX";
+
+
+        const whatsappURL =
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+
+        window.open(whatsappURL, "_blank");
+
+    });
+
+}
